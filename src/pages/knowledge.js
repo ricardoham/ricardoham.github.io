@@ -9,3 +9,5 @@ class Knowledge extends React.PureComponent {
     )
   }
 }
+
+export default Knowledge;
