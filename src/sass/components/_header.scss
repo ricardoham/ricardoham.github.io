@@ -3,8 +3,11 @@
   height: 2rem;
   text-decoration: none;
   background-color: $color-white;
+  color: $color-grey-dark;
 
   &__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    padding: 1rem;
   }
 }
