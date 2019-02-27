@@ -1,0 +1,10 @@
+.header {
+  width: 50%;
+  height: 2rem;
+  text-decoration: none;
+  background-color: $color-white;
+
+  &__text {
+    font-size: 2rem;
+  }
+}

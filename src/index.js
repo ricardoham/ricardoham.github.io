@@ -6,7 +6,7 @@ import './sass/main.scss';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App /> 
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
