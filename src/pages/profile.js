@@ -6,7 +6,11 @@ class Profile extends React.PureComponent {
       <div className="container">
         <section>
           <h2>Profile Context</h2>
-          <p>This is will be the profile text</p>
+          <p>Front-End Web developer working with the most used and 
+            recent technologies: Modern JavaScript(ES6), React, Redux, 
+            React- Native and so on. Always an enthusiast with JavaScript programming, 
+            a geek passionate about expanding the knowledge, developing solutions 
+            outside of the box to accelerate the delivery and quality of projects.</p>
         </section>
       </div>
     )
