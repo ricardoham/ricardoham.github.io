@@ -4,10 +4,10 @@ class Profile extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <div>
+        <section>
           <h2>Profile Context</h2>
           <p>This is will be the profile text</p>
-        </div>
+        </section>
       </div>
     )
   }

@@ -1,14 +1,21 @@
 .header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1rem 2rem rgba($color-black, .15);
+}
+
+.header__text {
   width: 100%;
   height: 2rem;
   text-decoration: none;
   background-color: $color-white;
   color: $color-grey-dark;
+
+  font-size: 1.6rem;
+  letter-spacing: .3rem;
   padding: 1rem;
 
-  &__text {
-    font-size: 1.6rem;
-    letter-spacing: .3rem;
-    padding: 1rem;
+  &:hover {
+
   }
 }
