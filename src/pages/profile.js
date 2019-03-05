@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../assets/profile.jpg'
 
 class Profile extends React.PureComponent {
   render() {
@@ -6,6 +7,7 @@ class Profile extends React.PureComponent {
       <div className="container">
         <section>
           <div className="row">
+          <img alt="profile" src={profile} />
           <h2>Profile Context</h2>
           <p className="paragraph">Front-End Web developer working with the most used and 
             recent technologies: Modern JavaScript(ES6), React, Redux, 
