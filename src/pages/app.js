@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../components/header';
-import Profile from './profile';
+import Routes from '../routes/routes';
 
 class App extends React.PureComponent {
   render() {
     return (
       <div>
         <Navbar />
-        <Profile />
+        <Routes />
       </div>
     )
   }
