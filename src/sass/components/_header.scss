@@ -1,18 +1,20 @@
 .header {
-  display: flex;
-  box-shadow: 0 .3rem .5rem rgba($color-black, .15);
-  padding: 1rem;
+  width: 100%;
+  height: 10rem;
   background-color: $color-white;
-
+  box-shadow: 0 .2rem .2rem rgba($color-black, .15);
+}
+.navbar {
+  display: flex;
+  margin-top: 4rem;
 }
 
-.header__text {
+.navbar__text {
   text-align: center;
   width: 100%;
   height: 2rem;
   text-decoration: none;
   color: $color-grey-dark;
-
   font-size: 1.6rem;
   letter-spacing: .7rem;
 
