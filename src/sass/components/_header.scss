@@ -11,7 +11,7 @@
 
 .navbar__text {
   text-align: center;
-  width: 100%;
+  margin: 0 6.2rem 0 6.2rem;
   height: 2rem;
   text-decoration: none;
   color: $color-grey-dark;
@@ -21,4 +21,8 @@
   &:hover {
     text-shadow: 0 .3rem .5rem rgba($color-black, .15);
   }
+}
+
+.header-name {
+  font-size: 3rem;
 }
