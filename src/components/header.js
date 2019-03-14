@@ -17,8 +17,8 @@ class Header extends React.PureComponent {
   render() {
     return (
       <div className="header-container">
-        <span>Ricardo T. Manoel Junior</span>
-        <span>Portfolio</span>
+        <span className="header__text--name">Ricardo T. Manoel Junior</span>
+        <span className="header__text--portfolio">Portfolio</span>
         {this.renderSocialIcons()}
       </div>
     )
