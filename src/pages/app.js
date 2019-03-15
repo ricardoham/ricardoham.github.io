@@ -9,7 +9,7 @@ class App extends React.PureComponent {
     return (
       <div>
         <Header />
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes />
         <Footer />
       </div>

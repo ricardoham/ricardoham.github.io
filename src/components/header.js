@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './navbar';
 
 class Header extends React.PureComponent {
 
@@ -20,6 +21,7 @@ class Header extends React.PureComponent {
         <span className="header__text--name">Ricardo T. Manoel Junior</span>
         <span className="header__text--portfolio">Portfolio</span>
         <span className="header__social-icons">{this.renderSocialIcons()}</span>
+        <Navbar />
       </div>
     )
   }
