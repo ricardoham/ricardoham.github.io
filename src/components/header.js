@@ -35,7 +35,7 @@ class Header extends React.PureComponent {
       <div className="header-container">
         <span className="header__text--name">Ricardo T. Manoel Junior</span>
         <span className="header__text--portfolio">Portfolio</span>
-        <span className="header__social-icons">{this.renderSocialIcons()}</span>
+        <ul className="header__social-icons">{this.renderSocialIcons()}</ul>
         <Navbar />
       </div>
     )
