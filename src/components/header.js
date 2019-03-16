@@ -6,11 +6,26 @@ class Header extends React.PureComponent {
   renderSocialIcons = () => {
     return (
     <>
-      <i className="fab fa-facebook-f"></i>
-      <i className="fab fa-linkedin-in"></i>
-      <i className="fab fa-github"></i>
-      <i className="fab fa-gitlab"></i>
-      <i className="fab fa-medium"></i>
+      <li>
+        <a href="https://www.linkedin.com/in/ricardo-manoel">
+          <i className="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ricardoham">
+          <i className="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://gitlab.com/rmanoel">
+          <i className="fab fa-gitlab"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/@rdomanoel">
+        <i className="fab fa-medium"></i>
+        </a>
+      </li>
     </>
     )
   }
