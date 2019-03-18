@@ -12,7 +12,7 @@ class Profile extends React.PureComponent {
           <img className="profile__image" alt="profile" src={profile} />
           </div>
           <div className="col-2-of-3">
-          <h2>Who am I?</h2>
+          <h1>Who am I?</h1>
           <p className="paragraph">Front-End Web developer working with the most used and 
             recent technologies: Modern JavaScript(ES6), React, Redux, 
             React- Native and so on. Always an enthusiast with JavaScript programming, 
