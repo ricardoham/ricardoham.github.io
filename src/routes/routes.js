@@ -8,11 +8,11 @@ import Contact from '../pages/contacts';
 
 const Routes = () => (
   <Switch>
-    <Route exact path='/' component={Profile} />
-    <Route path='/knowledge' component={Knowledge} />
-    <Route path='/resume' component={Resume} />
-    <Route path='projects' component={Projects} />
-    <Route path='/contact' component={Contact} />
+    <Route exact path="/" component={Profile} />
+    <Route path="/knowledge" component={Knowledge} />
+    <Route path="/resume" component={Resume} />
+    <Route path="projects" component={Projects} />
+    <Route path="/contact" component={Contact} />
   </Switch>
 )
 
