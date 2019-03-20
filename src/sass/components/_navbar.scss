@@ -14,11 +14,14 @@
 
   &:hover {
     text-shadow: 0 .3rem .5rem rgba($color-black, .15);
+    transform: translateY(-2px);
+
   }
 
   &--active {
     border-bottom: solid 2px $color-black;
     box-shadow: 0 .1rem 0 rgba($color-black,.2);
+    transition: width .2s
   }
 }
 
