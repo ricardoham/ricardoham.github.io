@@ -1,14 +1,15 @@
 import Head from 'next/head'
+import Parallax from '../components/parallax/Parallax'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
+    <div>
+      <Parallax />
+      {/* <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to my Portfolio!
@@ -24,7 +25,11 @@ export default function Home() {
           I graduate from University of Campinas - Unicamp in 2016 with a degree in Analysis and Software Development.
           In there I also performed a scientific study with the theme: Study of Failures on Virtual Machines in the Cloud Computing.
         </p>
-      </main>
+        <span className={styles.footer}>Test</span>
+      </main> */}
+      <div className={styles.test}>
+        <Parallax />
+      </div>
     </div>
   )
 }

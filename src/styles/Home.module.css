@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 1000px
 }
 
 .footer {
@@ -113,6 +114,12 @@
 
 .logo {
   height: 1em;
+}
+
+.test {
+  height:1000px;
+  background-color:red;
+  font-size:36px
 }
 
 @media (max-width: 600px) {
