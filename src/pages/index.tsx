@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Parallax from '../components/parallax/Parallax'
+import SpringSection from '../components/section/spring/SpringSection'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div>
-      <Parallax />
+      {/* <Parallax /> */}
       {/* <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,9 +28,9 @@ export default function Home() {
         </p>
         <span className={styles.footer}>Test</span>
       </main> */}
-      <div className={styles.test}>
-        <Parallax />
-      </div>
+      <SpringSection>
+        <span>TEST</span>
+      </SpringSection>
     </div>
   )
 }

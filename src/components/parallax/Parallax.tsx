@@ -1,9 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
+import { Parallax as SpringParallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 
-const Parallax = () => {
+const Parallax = ({ picture }) => {
   return (
-    <div className="parallax" />
+    <SpringParallax pages={2}>
+
+    </SpringParallax>
+    // <img
+    //   className="parallax"
+    //   src="assets/picture01.jpg"
+    // />
   )
 }
 
