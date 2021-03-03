@@ -1,15 +1,18 @@
 import Head from 'next/head';
+import Banner from '../components/banner/Banner';
 import SpringParallax from '../components/parallax/Parallax';
 import SpringSection from '../components/section/spring/SpringSection';
 
 export default function Home() {
   return (
     <div>
-      <SpringParallax />
+      <Banner />
+      {/* <div className="parallax" /> */}
+      {/* <SpringParallax /> */}
     </div>
   );
 }
-
+// background-image: url(/assets/picture01.jpg);
 // {/* <Head>
 //   <title>Create Next App</title>
 //   <link rel="icon" href="/favicon.ico" />

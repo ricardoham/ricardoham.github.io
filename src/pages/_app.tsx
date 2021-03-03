@@ -1,7 +1,12 @@
-import '../sass/main.scss'
+import StyledGlobal from '../globalStyles';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <StyledGlobal />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
