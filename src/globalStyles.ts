@@ -2,14 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const StyledGlobal = createGlobalStyle`
   html, body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     font-size: 62.5%;
     line-height: 1.7;
     height: 100%;
-    width: 100%;
-    box-sizing: border-box;
     background-color: #181818;
-    color: #777;
+    color: #fff;
+    margin: 0;
   }
 
   ul {
@@ -18,7 +17,6 @@ const StyledGlobal = createGlobalStyle`
 
   a {
   text-decoration: none;
-  color: #181818;
 }
 
   h1 {

@@ -1,15 +1,15 @@
 import React from 'react';
+import Navbar from '../navbar/Navbar';
 import { StyledHeader } from './styles';
 
-interface Props {
-  children?: JSX.Element;
-}
-
-const Banner = ({ children }: Props) => {
+const Banner = () => {
   return (
     <StyledHeader>
-      <h1>Welcome to my Portfolio</h1>
-      {children}
+      <h1>I am Ricardo Manoel</h1>
+      <h3>Welcome to my portfolio</h3>
+      <StyledHeader.Nav>
+        <Navbar />
+      </StyledHeader.Nav>
     </StyledHeader>
   );
 };

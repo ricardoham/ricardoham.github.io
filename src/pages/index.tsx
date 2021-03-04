@@ -1,15 +1,39 @@
+import React, { useRef } from 'react';
 import Head from 'next/head';
 import Banner from '../components/banner/Banner';
-import SpringParallax from '../components/parallax/Parallax';
+import Navbar from '../components/navbar/Navbar';
+import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SpringSection from '../components/section/spring/SpringSection';
 
 export default function Home() {
+  const springRef = useRef<IParallax>();
+
   return (
-    <div>
-      <Banner />
-      {/* <div className="parallax" /> */}
-      {/* <SpringParallax /> */}
-    </div>
+    <>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Parallax ref={springRef} pages={3}>
+        <ParallaxLayer offset={0} speed={1} factor={2}>
+          <Banner />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          style={{ backgroundColor: '#805E73' }}
+        />
+        <ParallaxLayer
+          offset={2}
+          speed={1}
+          style={{ backgroundColor: '#87BCDE' }}
+        />
+      </Parallax>
+    </>
   );
 }
 // background-image: url(/assets/picture01.jpg);
