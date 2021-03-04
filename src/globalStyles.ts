@@ -3,12 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 const StyledGlobal = createGlobalStyle`
   html, body {
     font-family: 'Amatic SC', sans-serif;
-    font-size: 62.5%;
     line-height: 1.7;
     height: 100%;
     background-color: #181818;
     color: #fff;
     margin: 0;
+    overflow-y: hidden;
   }
 
   ul {
@@ -29,6 +29,11 @@ const StyledGlobal = createGlobalStyle`
 
   h3 {
     font-size: 2rem;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 
   @mixin clearfix {

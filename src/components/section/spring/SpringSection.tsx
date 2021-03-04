@@ -1,12 +1,12 @@
 import { useSpring, animated } from 'react-spring';
 
 const SpringSection = ({ children }) => {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
-    <animated.div style={props} className="span-test">
+    <animated.section style={props} className="span-test">
       {children}
-    </animated.div>
-  )
-}
+    </animated.section>
+  );
+};
 
-export default SpringSection
+export default SpringSection;

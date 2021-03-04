@@ -9,7 +9,7 @@ export const StyledHeader: any = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 400px;
   width: 100%;
 `;
 
