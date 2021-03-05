@@ -9,7 +9,7 @@ interface Props {
 
 const NavList = ({ onParallaxPosition }: Props) => {
   const springRef = useRef();
-  const navRef = useRef<HTMLDivElement>();
+  const navRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const { borderRadius, size, opacity, ...rest } = useSpring<any>({
     ref: springRef,
@@ -37,26 +37,23 @@ const NavList = ({ onParallaxPosition }: Props) => {
   ]);
 
   const handleOpen = (event) => {
-    event.stopPropagation();
-    setOpen(!open);
     if (navRef.current && !navRef.current.contains(event.target)) {
-      setOpen(!open);
+      setOpen(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener('click', handleOpen, false);
+    document.addEventListener('click', handleOpen);
 
     return () => {
-      document.removeEventListener('click', handleOpen, false);
+      document.removeEventListener('click', handleOpen);
     };
   });
 
   return (
-    <div>
+    <div onClick={() => setOpen(!open)}>
       <StyledNavList
         ref={navRef}
-        onClick={handleOpen}
         style={{
           ...rest,
           width: size,
