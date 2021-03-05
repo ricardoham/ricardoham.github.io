@@ -9,7 +9,6 @@ export const StyledNavList = styled(animated.div)`
   padding: 8px;
   background: white;
   border-radius: 50px;
-  cursor: pointer;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
 `;
 
@@ -19,5 +18,7 @@ export const Item = styled(animated.div)`
   vertical-align: middle;
   background: white;
   border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
   will-change: transform, opacity;
 `;

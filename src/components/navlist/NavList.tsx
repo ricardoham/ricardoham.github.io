@@ -1,22 +1,16 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { StyledNavList, Item } from './styles';
 import { config, useChain, useSpring, useTransition } from 'react-spring';
+import { list } from './list';
 
-const NavList = () => {
-  const data = [
-    {
-      name: 'About Me',
-      css: 'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
-      height: 20,
-    },
-    {
-      name: 'My Graduation',
-      css: 'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)',
-      height: 20,
-    },
-  ];
+interface Props {
+  onParallaxPosition: (pos: number) => void;
+}
+
+const NavList = ({ onParallaxPosition }: Props) => {
   const springRef = useRef();
-  const [open, set] = useState(false);
+  const navRef = useRef<HTMLDivElement>();
+  const [open, setOpen] = useState(false);
   const { borderRadius, size, opacity, ...rest } = useSpring<any>({
     ref: springRef,
     config: config.stiff,
@@ -28,10 +22,10 @@ const NavList = () => {
     },
   });
   const transRef = useRef();
-  const transitions = useTransition(open ? data : [], (item) => item.name, {
+  const transitions = useTransition(open ? list : [], (item) => item.name, {
     ref: transRef,
     unique: true,
-    trail: 400 / data.length,
+    trail: 400 / list.length,
     from: { opacity: 0, transform: 'scale(0)' },
     enter: { opacity: 1, transform: 'scale(1)' },
     leave: { opacity: 0, transform: 'scale(0)' },
@@ -42,17 +36,45 @@ const NavList = () => {
     open ? 0.1 : 0.6,
   ]);
 
+  const handleOpen = (event) => {
+    event.stopPropagation();
+    setOpen(!open);
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setOpen(!open);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleOpen, false);
+
+    return () => {
+      document.removeEventListener('click', handleOpen, false);
+    };
+  });
+
   return (
-    <StyledNavList
-      style={{ ...rest, width: size, height: size, borderRadius: borderRadius }}
-      onClick={() => set((open) => !open)}
-    >
-      {transitions.map(({ item, key, props }) => (
-        <Item key={key} style={{ ...props, background: item.css }}>
-          <span>{item.name}</span>
-        </Item>
-      ))}
-    </StyledNavList>
+    <div>
+      <StyledNavList
+        ref={navRef}
+        onClick={handleOpen}
+        style={{
+          ...rest,
+          width: size,
+          height: size,
+          borderRadius: borderRadius,
+        }}
+      >
+        {transitions.map(({ item, key, props }, index: number) => (
+          <Item
+            key={key}
+            style={{ ...props, background: item.css }}
+            onClick={() => onParallaxPosition(index)}
+          >
+            <span>{item.name}</span>
+          </Item>
+        ))}
+      </StyledNavList>
+    </div>
   );
 };
 
