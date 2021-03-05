@@ -9,8 +9,9 @@ export const StyledHeader: any = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   width: 100%;
+  margin-top: 80px;
 `;
 
 StyledHeader.Nav = styled.div`

@@ -4,6 +4,7 @@ import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Banner from '../components/banner/Banner';
 import NavList from '../components/navlist/NavList';
 import Profile from '../pages-content/profile/profile';
+import Graduation from '../pages-content/graduation/graduation';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
@@ -25,22 +26,18 @@ export default function Home() {
 
       <NavList onParallaxPosition={parallaxPosition} />
       <Parallax ref={parallaxRef} pages={3}>
-        <ParallaxLayer offset={0} speed={1} factor={3}>
+        <ParallaxLayer offset={0} speed={1}>
           <Banner />
         </ParallaxLayer>
-        <ParallaxLayer offset={0.5} speed={1.2} factor={1.5}>
+        <ParallaxLayer offset={0.9} speed={1.2}>
           <Profile />
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={1}
-          speed={1}
-          style={{ backgroundColor: '#805E73' }}
-        />
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          style={{ backgroundColor: '#87BCDE' }}
-        />
+        <ParallaxLayer offset={1} speed={1.2}>
+          <Graduation />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={1}>
+          <footer>FOOTER</footer>
+        </ParallaxLayer>
       </Parallax>
     </>
   );

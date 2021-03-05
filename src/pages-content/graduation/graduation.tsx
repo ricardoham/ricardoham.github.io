@@ -3,13 +3,13 @@ import Section from '../../components/section/section/Section';
 import SpringSection from '../../components/section/spring/SpringSection';
 import Image from 'next/image';
 
-const Profile = () => {
+const Graduation = () => {
   return (
     <Section>
       {/* <Image src="/assets/profile.jpg" width={500} height={500} /> */}
 
       <article>
-        <h2>About me</h2>
+        <h2>Graduation</h2>
         <p>
           My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on
           Campinas city, knows as Princesa do Oeste, the third most populous
@@ -27,4 +27,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Graduation;

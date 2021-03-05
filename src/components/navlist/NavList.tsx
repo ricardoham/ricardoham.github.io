@@ -11,14 +11,23 @@ const NavList = ({ onParallaxPosition }: Props) => {
   const springRef = useRef();
   const navRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
-  const { borderRadius, size, opacity, ...rest } = useSpring<any>({
+  const {
+    borderRadius,
+    top,
+    heightSize,
+    widthSize,
+    opacity,
+    ...rest
+  } = useSpring<any>({
     ref: springRef,
     config: config.stiff,
-    from: { size: '40px', background: 'tomato' },
+    from: { heightSize: '40px', widthSize: '40px', background: 'tomato' },
     to: {
-      size: open ? '100%' : '40px',
+      heightSize: open ? '200px' : '40px',
+      widthSize: open ? '100px' : '40px',
       borderRadius: open ? '4px' : '50px',
       background: open ? 'white' : 'tomato',
+      top: open ? '500px' : '720px',
     },
   });
   const transRef = useRef();
@@ -56,9 +65,10 @@ const NavList = ({ onParallaxPosition }: Props) => {
         ref={navRef}
         style={{
           ...rest,
-          width: size,
-          height: size,
+          width: widthSize,
+          height: heightSize,
           borderRadius: borderRadius,
+          top: top,
         }}
       >
         {transitions.map(({ item, key, props }, index: number) => (

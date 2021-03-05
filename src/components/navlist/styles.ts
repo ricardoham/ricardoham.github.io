@@ -10,6 +10,8 @@ export const StyledNavList = styled(animated.div)`
   background: white;
   border-radius: 50px;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
+  top: 720px;
+  right: 70px;
 `;
 
 export const Item = styled(animated.div)`

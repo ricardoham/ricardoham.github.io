@@ -1,4 +1,6 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
 
-export const StyledSection: any = styled(animated.div)``;
+export const StyledArticle: any = styled(animated.article)`
+  padding: 12px;
+`;
