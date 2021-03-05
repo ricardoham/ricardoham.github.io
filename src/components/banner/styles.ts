@@ -4,11 +4,7 @@ export const StyledHeader: any = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/assets/picture03.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 600px;
   width: 100%;
   margin-top: 80px;
