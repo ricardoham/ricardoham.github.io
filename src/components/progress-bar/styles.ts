@@ -35,7 +35,6 @@ export const Label = styled.label`
 export const StyledBar: any = styled.div`
   position: relative;
   border-radius: 4px;
-  width: 60%;
   @media only screen and (max-width: 600px) {
     width: 100%;
   }

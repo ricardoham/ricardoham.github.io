@@ -45,7 +45,7 @@ const Credits = () => {
           </span>
         </span>
         <span>https://gph.is/st/E1djZlm</span>
-        via Girls Who Code on GIPHY
+        via Girls Who Code on GIPHY @devrock
       </div>
     </div>
   );
