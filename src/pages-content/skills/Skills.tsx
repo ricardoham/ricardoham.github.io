@@ -1,29 +1,28 @@
 import React from 'react';
-import Section from '../../components/section/section/Section';
-import SpringSection from '../../components/section/spring/SpringSection';
-import Image from 'next/image';
+import ProgressBar from '../../components/progress-bar/ProgressBar';
+import { Container } from './styles';
 
 const Skills = () => {
   return (
-    <Section>
-      {/* <Image src="/assets/profile.jpg" width={500} height={500} /> */}
-
-      <article>
-        <h2>Skills</h2>
-        <p>
-          My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on
-          Campinas city, knows as Princesa do Oeste, the third most populous
-          municipality in São Paulo state And consider one of biggest center of
-          technology and research in Latin America.
-        </p>
-        <p>
-          I graduate from University of Campinas - Unicamp in 2016 with a degree
-          in Analysis and Software Development. In there I also performed a
-          scientific study with the theme: Study of Failures on Virtual Machines
-          in the Cloud Computing.
-        </p>
-      </article>
-    </Section>
+    <Container>
+      <h1>Skills</h1>
+      <h2>Front-End</h2>
+      <ProgressBar percentage="90%" label="React" />
+      <ProgressBar percentage="70%" label="Angular" />
+      <ProgressBar percentage="70%" label="Vue" />
+      <ProgressBar percentage="70%" label="React-Native" />
+      <ProgressBar percentage="50%" label="Flutter" />
+      <ProgressBar percentage="80%" label="TypeScript" />
+      <h2>Back-End</h2>
+      <ProgressBar percentage="60%" label="NodeJS" />
+      <ProgressBar percentage="65%" label="GoLang" />
+      <ProgressBar percentage="40%" label="Java" />
+      <ProgressBar percentage="50%" label="MongoDB" />
+      <h2>Additional</h2>
+      <ProgressBar percentage="70%" label="UX/UI" />
+      <ProgressBar percentage="60%" label="Python" />
+      <ProgressBar percentage="40%" label="Unit3D" />
+    </Container>
   );
 };
 

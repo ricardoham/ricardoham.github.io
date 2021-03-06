@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
 
       <NavList onParallaxPosition={parallaxPosition} />
-      <Parallax ref={parallaxRef} pages={7}>
+      <Parallax ref={parallaxRef} pages={8}>
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -51,13 +51,13 @@ export default function Home() {
         <ParallaxLayer offset={3} speed={0.3}>
           <WorkExp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0.3}>
+        <ParallaxLayer offset={4} speed={0.3} factor={2}>
           <Skills />
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={0.3}>
+        <ParallaxLayer offset={6} speed={0.3}>
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={6} speed={1}>
+        <ParallaxLayer offset={7} speed={0.5}>
           <footer>FOOTER</footer>
         </ParallaxLayer>
       </Parallax>
