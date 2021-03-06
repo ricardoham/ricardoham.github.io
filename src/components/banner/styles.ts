@@ -7,7 +7,7 @@ export const StyledHeader: any = styled.header`
   background-color: rgba(0, 0, 0, 0.5);
   height: 600px;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 100px;
 `;
 
 StyledHeader.Nav = styled.div`

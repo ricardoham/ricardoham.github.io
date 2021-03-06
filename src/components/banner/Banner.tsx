@@ -8,7 +8,7 @@ const Banner = () => {
       <h1>I am Ricardo Manoel</h1>
       <h3>Welcome to my portfolio</h3>
       <Image
-        src="/assets/picture03.jpg"
+        src="/assets/picture05.jpg"
         layout="fill"
         objectFit="fill"
         quality={100}

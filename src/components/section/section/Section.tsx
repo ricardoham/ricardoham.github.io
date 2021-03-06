@@ -1,8 +1,18 @@
 import React from 'react';
-import { StyledSection } from './styles';
+import { StyledSection, StyledArticle, StyledImg } from './styles';
 
-const Section = ({ children }) => {
-  return <StyledSection>{children}</StyledSection>;
+interface Props {
+  children: any;
+  img?: string;
+}
+
+const Section = ({ children, img }: Props) => {
+  return (
+    <StyledSection>
+      <StyledArticle>{children}</StyledArticle>
+      {img && <StyledImg src={img} />}
+    </StyledSection>
+  );
 };
 
 export default Section;

@@ -1,14 +1,10 @@
 import React from 'react';
 import Section from '../../components/section/section/Section';
-import SpringSection from '../../components/section/spring/SpringSection';
-import Image from 'next/image';
 
 const Profile = () => {
   return (
-    <Section>
-      {/* <Image src="/assets/profile.jpg" width={500} height={500} /> */}
-
-      <article>
+    <div>
+      <Section img="/assets/gifs/cat.webp">
         <h2>About me</h2>
         <p>
           My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on
@@ -29,8 +25,8 @@ const Profile = () => {
           video-games and study something new 🤓 <br /> I also enjoy to go out
           with friends specially to take a beer! 🍺
         </p>
-      </article>
-    </Section>
+      </Section>
+    </div>
   );
 };
 

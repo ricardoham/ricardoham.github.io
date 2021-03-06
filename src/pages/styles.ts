@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 import { ParallaxLayer } from '@react-spring/parallax';
 
-export const StyledLayer = styled(ParallaxLayer)`
-  background-image: url('/assets/picture02.jpg');
+interface StyledProps {
+  bgImage?: string;
+}
+
+export const StyledLayer = styled(ParallaxLayer)<StyledProps>`
+  background-image: url(${(props) => props.bgImage});
   background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 0.5; */
+  will-change: transform;
 `;

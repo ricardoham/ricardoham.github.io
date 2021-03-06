@@ -6,6 +6,9 @@ import NavList from '../components/navlist/NavList';
 import Profile from '../pages-content/profile/Profile';
 import Graduation from '../pages-content/graduation/Graduation';
 import { StyledLayer } from './styles';
+import WorkExp from '../pages-content/workexp/WorkExp';
+import Skills from '../pages-content/skills/Skills';
+import Projects from '../pages-content/projects/Projects';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
@@ -26,19 +29,35 @@ export default function Home() {
       </Head>
 
       <NavList onParallaxPosition={parallaxPosition} />
-      <Parallax ref={parallaxRef} pages={3}>
-        <StyledLayer offset={0} speed={0} factor={3} />
+      <Parallax ref={parallaxRef} pages={7}>
+        <ParallaxLayer
+          offset={0}
+          speed={0}
+          factor={7}
+          style={{
+            backgroundImage: 'url("/assets/picture04.jpg")',
+            backgroundRepeat: 'repeat',
+          }}
+        />
         <ParallaxLayer offset={0} speed={1}>
           <Banner />
         </ParallaxLayer>
-        <StyledLayer offset={0.9} speed={1.2}>
+        <StyledLayer offset={1} speed={0.3}>
           <Profile />
         </StyledLayer>
-        <ParallaxLayer offset={1} speed={1.2}>
-          {/* <StyleImg src="/assets/picture01.jpg" layout="fill" /> */}
+        <ParallaxLayer offset={2} speed={0.3}>
           <Graduation />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={3} speed={0.3}>
+          <WorkExp />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0.3}>
+          <Skills />
+        </ParallaxLayer>
+        <ParallaxLayer offset={5} speed={0.3}>
+          <Projects />
+        </ParallaxLayer>
+        <ParallaxLayer offset={6} speed={1}>
           <footer>FOOTER</footer>
         </ParallaxLayer>
       </Parallax>

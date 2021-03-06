@@ -1,28 +1,30 @@
 import React from 'react';
 import Section from '../../components/section/section/Section';
-import SpringSection from '../../components/section/spring/SpringSection';
-import Image from 'next/image';
 
 const WorkExp = () => {
   return (
     <Section>
-      {/* <Image src="/assets/profile.jpg" width={500} height={500} /> */}
-
-      <article>
-        <h2>WorkExp</h2>
-        <p>
-          My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on
-          Campinas city, knows as Princesa do Oeste, the third most populous
-          municipality in São Paulo state And consider one of biggest center of
-          technology and research in Latin America.
-        </p>
-        <p>
-          I graduate from University of Campinas - Unicamp in 2016 with a degree
-          in Analysis and Software Development. In there I also performed a
-          scientific study with the theme: Study of Failures on Virtual Machines
-          in the Cloud Computing.
-        </p>
-      </article>
+      <h2>Work Experience</h2>
+      <p>
+        My first work experience was in <b>Instituto de Pesquisas Eldorado</b>{' '}
+        at there I worked as Software Developer and Quality Assurance Analyst as
+        a Motorola Mobility contractor. I got my first experience working with
+        teams around the world and I did tools for Web Applications, Scripts to
+        automatize the QA Squad tasks, using the module of Android fastboot.
+      </p>
+      <p>
+        Afterward, I worked as Front-End developer in <b>Daitan Group</b>, with
+        the newest technologies in the market, React Ecosystem. Implementing the
+        most diverse solutions for security chats and customs bots as Symphony:
+        secure team chat, contractor. In there I created a System Design to
+        handle the demand to use the same look and feel and a CLI to automatize
+        the bootstrap of applications.
+      </p>
+      <p>
+        Today I work as Full-Stack developer in Dextra, here I developed a lot
+        of applications using Golang, React, and Angular. Also, I've presented
+        several presentations on front-end technologies.
+      </p>
     </Section>
   );
 };
