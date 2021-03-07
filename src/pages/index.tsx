@@ -9,6 +9,7 @@ import { StyledLayer } from './styles';
 import WorkExp from '../pages-content/workexp/WorkExp';
 import Skills from '../pages-content/skills/Skills';
 import Projects from '../pages-content/projects/Projects';
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
@@ -57,8 +58,8 @@ export default function Home() {
         <ParallaxLayer offset={6} speed={0.3}>
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={7} speed={0.5}>
-          <footer>FOOTER</footer>
+        <ParallaxLayer offset={7.2} speed={0.5}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </>

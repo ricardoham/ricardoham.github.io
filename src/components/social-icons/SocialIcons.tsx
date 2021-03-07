@@ -20,7 +20,7 @@ const SocialIcons = () => {
   return (
     <IconContainer>
       {list.map((item, index) => (
-        <Icon href={item.link}>
+        <Icon key={index} href={item.link}>
           <item.icon />
         </Icon>
       ))}

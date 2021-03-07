@@ -72,11 +72,11 @@ const NavList = ({ onParallaxPosition }: Props) => {
         }}
       >
         <NavIcon />
-        {transitions.map(({ item, key, props }, index: number) => (
+        {transitions.map(({ item, key, props }) => (
           <Item
             key={key}
             style={{ ...props }}
-            onClick={() => onParallaxPosition(index)}
+            onClick={() => onParallaxPosition(item.offset)}
           >
             <span>{item.name}</span>
           </Item>
