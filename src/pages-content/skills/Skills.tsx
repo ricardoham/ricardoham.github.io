@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <Container>
       <h1>Skills</h1>
-      <Container.Skills style={{ display: 'flex' }}>
+      <Container.Skills>
         <Container.Bars>
           <h2>Front-End</h2>
           <ProgressBar percentage="90%" label="React" />
