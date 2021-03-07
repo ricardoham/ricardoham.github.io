@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StyledNavList, Item } from './styles';
+import { StyledNavList, Item, NavIcon } from './styles';
 import { config, useChain, useSpring, useTransition } from 'react-spring';
 import { list } from './list';
 
@@ -23,10 +23,10 @@ const NavList = ({ onParallaxPosition }: Props) => {
     config: config.stiff,
     from: { heightSize: '40px', widthSize: '40px', background: 'tomato' },
     to: {
-      heightSize: open ? '200px' : '40px',
-      widthSize: open ? '100px' : '40px',
+      heightSize: open ? '300px' : '40px',
+      widthSize: open ? '150px' : '40px',
       borderRadius: open ? '4px' : '50px',
-      background: open ? 'white' : 'tomato',
+      background: open ? 'rgba(24, 24, 24, 0.605)' : 'tomato',
       top: open ? '500px' : '720px',
     },
   });
@@ -71,10 +71,11 @@ const NavList = ({ onParallaxPosition }: Props) => {
           top: top,
         }}
       >
+        <NavIcon />
         {transitions.map(({ item, key, props }, index: number) => (
           <Item
             key={key}
-            style={{ ...props, background: item.css }}
+            style={{ ...props }}
             onClick={() => onParallaxPosition(index)}
           >
             <span>{item.name}</span>

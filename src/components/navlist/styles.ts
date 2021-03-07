@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
+import { FaBars } from 'react-icons/fa';
 
 export const StyledNavList = styled(animated.div)`
   position: fixed;
@@ -15,12 +16,20 @@ export const StyledNavList = styled(animated.div)`
 `;
 
 export const Item = styled(animated.div)`
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
   margin-bottom: 12px;
   padding: 8px;
   vertical-align: middle;
-  background: white;
-  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
   cursor: pointer;
   z-index: 100;
   will-change: transform, opacity;
+`;
+
+export const NavIcon = styled(FaBars)`
+  align-self: center;
+  font-size: 2rem;
+  margin-top: 4px;
 `;
