@@ -28,3 +28,7 @@ export const SkillsImg = styled.img`
     height: 100px;
   }
 `;
+
+export const SkillsTextFE = styled.h2`
+  margin-top: 0px;
+`;

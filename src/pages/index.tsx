@@ -5,11 +5,11 @@ import Banner from '../components/banner/Banner';
 import NavList from '../components/navlist/NavList';
 import Profile from '../pages-content/profile/Profile';
 import Graduation from '../pages-content/graduation/Graduation';
-import { StyledLayer } from './styles';
 import WorkExp from '../pages-content/workexp/WorkExp';
 import Skills from '../pages-content/skills/Skills';
 import Projects from '../pages-content/projects/Projects';
 import Footer from '../components/footer/Footer';
+import styles from '../styles/Parallax.module.css';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
@@ -30,35 +30,27 @@ export default function Home() {
       </Head>
 
       <NavList onParallaxPosition={parallaxPosition} />
-      <Parallax ref={parallaxRef} pages={8}>
-        <ParallaxLayer
-          offset={0}
-          speed={0}
-          factor={7}
-          style={{
-            backgroundImage: 'url("/assets/picture04.jpg")',
-            backgroundRepeat: 'repeat',
-          }}
-        />
+      <Parallax ref={parallaxRef} pages={9} className={styles.bgimg}>
+        <ParallaxLayer offset={0} speed={0} />
         <ParallaxLayer offset={0} speed={1}>
           <Banner />
         </ParallaxLayer>
-        <StyledLayer offset={1} speed={0.3}>
+        <ParallaxLayer offset={1} speed={0.3}>
           <Profile />
-        </StyledLayer>
-        <ParallaxLayer offset={2} speed={0.3}>
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.18} speed={0.3}>
           <Graduation />
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.3}>
           <WorkExp />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0.3} factor={2}>
+        <ParallaxLayer offset={4.3} speed={0.3}>
           <Skills />
         </ParallaxLayer>
-        <ParallaxLayer offset={6} speed={0.3}>
+        <ParallaxLayer offset={6.4} speed={0.3}>
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={7.2} speed={0.5}>
+        <ParallaxLayer offset={8.5} speed={0.5}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

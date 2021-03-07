@@ -12,7 +12,7 @@ export const list = [
   {
     name: 'My Graduation',
     height: 20,
-    offset: 2,
+    offset: 2.18,
   },
   {
     name: 'Work Experience',
@@ -22,11 +22,11 @@ export const list = [
   {
     name: 'Skills',
     height: 20,
-    offset: 4,
+    offset: 4.2,
   },
   {
     name: 'Projects',
     height: 20,
-    offset: 6,
+    offset: 6.3,
   },
 ];

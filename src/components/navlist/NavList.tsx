@@ -21,12 +21,12 @@ const NavList = ({ onParallaxPosition }: Props) => {
   } = useSpring<any>({
     ref: springRef,
     config: config.stiff,
-    from: { heightSize: '40px', widthSize: '40px', background: 'tomato' },
+    from: { heightSize: '40px', widthSize: '40px', background: '#1576f3' },
     to: {
       heightSize: open ? '300px' : '40px',
       widthSize: open ? '150px' : '40px',
       borderRadius: open ? '4px' : '50px',
-      background: open ? 'rgba(24, 24, 24, 0.605)' : 'tomato',
+      background: open ? 'rgba(24, 24, 24, 0.605)' : '#1576f3',
       top: open ? '500px' : '720px',
     },
   });

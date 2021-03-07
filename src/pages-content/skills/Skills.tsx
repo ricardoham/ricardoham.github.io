@@ -1,6 +1,6 @@
 import React from 'react';
 import ProgressBar from '../../components/progress-bar/ProgressBar';
-import { Container, SkillsImg } from './styles';
+import { Container, SkillsImg, SkillsTextFE } from './styles';
 
 const Skills = () => {
   return (
@@ -8,7 +8,7 @@ const Skills = () => {
       <h1>Skills</h1>
       <Container.Skills>
         <Container.Bars>
-          <h2>Front-End</h2>
+          <SkillsTextFE>Front-End</SkillsTextFE>
           <ProgressBar percentage="90%" label="React" />
           <ProgressBar percentage="70%" label="Angular" />
           <ProgressBar percentage="70%" label="Vue" />
