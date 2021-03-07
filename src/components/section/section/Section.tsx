@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledSection, StyledArticle, StyledImg } from './styles';
 
 interface Props {
-  children: any;
+  children: React.ReactNode;
   img?: string;
 }
 

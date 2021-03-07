@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StyledNavList, Item, NavIcon } from './styles';
 import { config, useChain, useSpring, useTransition } from 'react-spring';
-import { list } from './list';
+import { list } from 'utils/list';
+import { StyledNavList, Item, NavIcon } from './styles';
 
 interface Props {
   onParallaxPosition: (pos: number) => void;

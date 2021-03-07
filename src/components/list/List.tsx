@@ -1,13 +1,21 @@
 import React from 'react';
+import { IconType } from 'react-icons';
 import { FaGithub } from 'react-icons/fa';
-import { data } from '../../utils/list-data';
-import { Colum, Container, Item, Project } from './styles';
+import { data } from 'utils/list-data';
+import { Column, Container, Item, Project } from './styles';
+
+interface DataPropsType {
+  projectName: string;
+  description: string;
+  link: string;
+  projectIcon: IconType;
+}
 
 const List = () => {
   return (
     <Container>
-      {data.map((item, index) => (
-        <Colum key={index}>
+      {data.map((item: DataPropsType, index) => (
+        <Column key={index}>
           <Project>
             <Project.Name>{item.projectName}</Project.Name>
             <item.projectIcon />
@@ -19,7 +27,7 @@ const List = () => {
             </Project.Repo>
             <FaGithub />
           </Project>
-        </Colum>
+        </Column>
       ))}
     </Container>
   );

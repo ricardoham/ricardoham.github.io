@@ -1,5 +1,5 @@
-import { ImageProps } from 'next/image';
 import React from 'react';
+import { ImageProps } from 'next/image';
 import { StyleImg, Wrapper } from './styles';
 
 interface Props {

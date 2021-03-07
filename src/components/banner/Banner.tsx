@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../image/Image';
 import SocialIcons from '../social-icons/SocialIcons';
 import { StyledHeader, HeaderPhoto, HeaderContainer } from './styles';
 

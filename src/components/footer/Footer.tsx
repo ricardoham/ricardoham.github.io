@@ -4,8 +4,6 @@ import {
   EmailShareButton,
   LinkedinIcon,
   LinkedinShareButton,
-  PinterestIcon,
-  PinterestShareButton,
   TelegramIcon,
   TelegramShareButton,
   TwitterIcon,

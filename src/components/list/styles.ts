@@ -34,7 +34,7 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Colum = styled.div`
+export const Column = styled.div`
   width: 400px;
   padding: 0 16px;
   margin-bottom: 24px;
