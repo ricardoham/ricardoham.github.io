@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
 import Head from 'next/head';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Banner from 'components/banner/Banner';
-import NavList from 'components/navlist/NavList';
-import Profile from 'pages-content/profile/Profile';
-import Graduation from 'pages-content/graduation/Graduation';
-import WorkExp from 'pages-content/workexp/WorkExp';
-import Skills from 'pages-content/skills/Skills';
-import Projects from 'pages-content/projects/Projects';
-import Footer from 'components/footer/Footer';
-import styles from 'styles/Parallax.module.css';
+import Banner from '../components/banner/Banner';
+import NavList from '../components/navlist/NavList';
+import Profile from '../pages-content/profile/Profile';
+import Graduation from '../pages-content/graduation/Graduation';
+import WorkExp from '../pages-content/workexp/WorkExp';
+import Skills from '../pages-content/skills/Skills';
+import Projects from '../pages-content/projects/Projects';
+import Footer from '../components/footer/Footer';
+import styles from '../styles/Parallax.module.css';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconType } from 'react-icons';
 import { FaGithub } from 'react-icons/fa';
-import { data } from 'utils/list-data';
+import { data } from '../../utils/list-data';
 import { Column, Container, Item, Project } from './styles';
 
 interface DataPropsType {

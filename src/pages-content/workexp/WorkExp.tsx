@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from 'components/section/section/Section';
+import Section from '../../components/section/section/Section';
 
 const WorkExp = () => {
   return (

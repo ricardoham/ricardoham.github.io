@@ -1,6 +1,6 @@
 import React from 'react';
-import List from 'components/list/List';
-import Section from 'components/section/section/Section';
+import List from '../../components/list/List';
+import Section from '../../components/section/section/Section';
 
 const Projects = () => {
   return (
