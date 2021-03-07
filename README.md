@@ -1,30 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My personal portfolio
 
-## Getting Started
+My personal portfolio in that a share my work experience and my skills
 
-First, run the development server:
+You can follow this link to check it out:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Developed with:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- NextJs, Styled Components and React-Spring
+- Designed by me
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Image Credits
 
-## Learn More
+- Background Image:
+  guille pozzi
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Gifs from GIPHY:
+  Sarah The Palmer @sarahthepalmer,
+  Girls Who Code on GIPHY @devrock
