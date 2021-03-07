@@ -27,7 +27,7 @@ export const data = [
     projectName: 'My react-typescript-cookbook',
     description:
       'A repo with some React TypeScript snippets, tricks, hints, boilerplate, etc',
-    link: 'https://github.com/ricardoham/generator-scaffold',
+    link: 'https://github.com/ricardoham/myreact-typescript-cookbook',
     projectIcon: FaReact,
   },
   {

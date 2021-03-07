@@ -17,6 +17,7 @@ const StyledGlobal = createGlobalStyle`
 
   a {
   text-decoration: none;
+  color: #fff;
 }
 
   h1 {
