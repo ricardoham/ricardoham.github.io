@@ -6,15 +6,25 @@ export const Container: any = styled.section`
 
 Container.Skills = styled.div`
   display: flex;
+  @media only screen and (max-width: 650px) {
+    flex-flow: column;
+  }
 `;
 
 Container.Bars = styled.div`
   width: 80%;
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+  }
 `;
 
 export const SkillsImg = styled.img`
-  margin-left: auto;
   width: 200px;
   height: 200px;
   align-self: center;
+  @media only screen and (max-width: 650px) {
+    margin: 8px 0px 0px;
+    width: 100px;
+    height: 100px;
+  }
 `;

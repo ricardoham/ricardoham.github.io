@@ -13,6 +13,9 @@ export const StyledNavList = styled(animated.div)`
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
   top: 720px;
   right: 70px;
+  @media only screen and (max-width: 650px) {
+    right: 40px;
+  }
 `;
 
 export const Item = styled(animated.div)`
