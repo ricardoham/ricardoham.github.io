@@ -27,7 +27,6 @@ const Image = ({
       src={src}
       width={width}
       height={height}
-      layout={layout}
       objectFit={objectFit}
       quality={quality}
       sizes={sizes}
