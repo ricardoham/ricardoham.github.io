@@ -2,7 +2,7 @@
 
 My personal portfolio in that a share my work experience and my skills
 
-You can follow this link to check it out:
+You can follow this link to check it out: https://ricardoham.github.io/
 
 ## Developed with:
 
