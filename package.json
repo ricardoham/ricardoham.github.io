@@ -7,7 +7,9 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "eslint --ext .ts,.tsx"
+    "lint": "eslint --ext .ts,.tsx",
+    "react-spring-issue-1078": "find node_modules -path \\*@react-spring/\\*/package.json -exec sed -i.bak 's/\"sideEffects\": false/\"sideEffects\": true/g' {} +",
+    "postinstall": "npm run react-spring-issue-1078"
   },
   "resolutions": {
     "webpack": "~4.43.0"
