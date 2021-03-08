@@ -19,21 +19,21 @@ const Footer = () => {
       <div>
         <FooterShareBtnsText>Share with your friends</FooterShareBtnsText>
         <LinkedinShareButton
-          url="http://localhost:3000/"
+          url="https://ricardoham.github.io/"
           title="Ricardo Manoel FullStack Developer Portfolio"
         >
           <LinkedinIcon />
         </LinkedinShareButton>
-        <TwitterShareButton url="http://localhost:3000/">
+        <TwitterShareButton url="https://ricardoham.github.io/">
           <TwitterIcon />
         </TwitterShareButton>
-        <WhatsappShareButton url="http://localhost:3000/">
+        <WhatsappShareButton url="https://ricardoham.github.io/">
           <WhatsappIcon />
         </WhatsappShareButton>
-        <TelegramShareButton url="http://localhost:3000/">
+        <TelegramShareButton url="https://ricardoham.github.io/">
           <TelegramIcon />
         </TelegramShareButton>
-        <EmailShareButton url="http://localhost:3000/">
+        <EmailShareButton url="https://ricardoham.github.io/">
           <EmailIcon />
         </EmailShareButton>
       </div>
