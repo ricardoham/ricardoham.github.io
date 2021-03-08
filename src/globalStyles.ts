@@ -36,7 +36,7 @@ const StyledGlobal = createGlobalStyle`
     font-weight: bold;
     font-size: 1.5rem;
     @media only screen and (max-width: 650px) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 

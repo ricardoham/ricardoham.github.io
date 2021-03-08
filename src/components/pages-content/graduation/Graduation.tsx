@@ -7,10 +7,10 @@ const Graduation = () => {
     <Section img={`${prefix}/assets/gifs/astronaut.webp`}>
       <h2>Graduation</h2>
       <p>
-        I graduate from University of Campinas - Unicamp in 2016 with a degree
-        in Analysis and Software Development. In there I also performed a
+        I graduated from the University of Campinas - Unicamp in 2016 with a
+        degree in Analysis and Software Development. In there I also performed a
         scientific study with the theme: Study of Failures on Virtual Machines
-        in the Cloud Computing.
+        in Cloud Computing.
       </p>
       <p>
         I was a volunteer at college(Unicamp), where I've instructed students

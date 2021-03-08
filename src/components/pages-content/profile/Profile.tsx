@@ -9,9 +9,9 @@ const Profile = () => {
         <h2>About me</h2>
         <p>
           My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on
-          Campinas city, knows as <i>Princesa do Oeste</i>, the third most
-          populous municipality in São Paulo state And consider one of biggest
-          center of technology and research in Latin America.
+          Campinas city, known as <i>Princesa do Oeste</i>, the third most
+          populous municipality in São Paulo state And consider one of the
+          biggest center of technology and research in Latin America.
         </p>
         <p>
           I'm a software developer who loves to work with the most used and
@@ -23,8 +23,8 @@ const Profile = () => {
         </p>
         <p>
           And besides work, I love to spare time with my pets, playing
-          video-games and study something new 🤓 <br /> I also enjoy to go out
-          with friends specially to take a beer! 🍺
+          video-games and study something new <br /> I also enjoy going out with
+          friends especially to take a beer!
         </p>
       </Section>
     </div>
