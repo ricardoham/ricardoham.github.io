@@ -38,6 +38,9 @@ export const Column = styled.div`
   width: 400px;
   padding: 0 16px;
   margin-bottom: 24px;
+  @media only screen and (max-width: 650px) {
+    font-size: 1rem;
+  }
   font-size: 1.5rem;
 `;
 

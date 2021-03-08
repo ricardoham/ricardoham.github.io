@@ -29,6 +29,9 @@ export const Container = styled.div`
 
 export const Label = styled.label`
   font-size: 2rem;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.5rem;
+  }
   font-weight: bold;
 `;
 

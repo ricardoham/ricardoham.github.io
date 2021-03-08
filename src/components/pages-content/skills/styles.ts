@@ -29,6 +29,12 @@ export const SkillsImg = styled.img`
   }
 `;
 
+export const SkillsTextTitle = styled.h3`
+  @media only screen and (max-width: 650px) {
+    margin-top: 0px;
+  }
+`;
+
 export const SkillsTextFE = styled.h2`
   margin-top: 0px;
 `;

@@ -11,10 +11,10 @@ export const StyledNavList = styled(animated.div)`
   background: white;
   border-radius: 50px;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
-  top: 720px;
-  right: 70px;
+  top: 80%;
+  right: 10%;
   @media only screen and (max-width: 650px) {
-    right: 40px;
+    right: 10%;
   }
 `;
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import { prefix } from 'utils/prefix';
 import ProgressBar from 'components/progress-bar/ProgressBar';
-import { Container, SkillsImg, SkillsTextFE } from './styles';
+import { Container, SkillsImg, SkillsTextFE, SkillsTextTitle } from './styles';
 
 const Skills = () => {
   return (
     <Container>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
       <Container.Skills>
         <Container.Bars>
-          <SkillsTextFE>Front-End</SkillsTextFE>
+          <SkillsTextTitle>Front-End</SkillsTextTitle>
           <ProgressBar percentage="90%" label="React" />
           <ProgressBar percentage="70%" label="Angular" />
           <ProgressBar percentage="70%" label="Vue" />
@@ -21,7 +21,7 @@ const Skills = () => {
       </Container.Skills>
       <Container.Skills style={{ display: 'flex' }}>
         <Container.Bars>
-          <h2>Back-End</h2>
+          <SkillsTextTitle>Back-End</SkillsTextTitle>
           <ProgressBar percentage="60%" label="NodeJS" />
           <ProgressBar percentage="65%" label="GoLang" />
           <ProgressBar percentage="40%" label="Java" />
@@ -31,7 +31,7 @@ const Skills = () => {
       </Container.Skills>
       <Container.Skills style={{ display: 'flex' }}>
         <Container.Bars>
-          <h2>Additional</h2>
+          <SkillsTextTitle>Additional</SkillsTextTitle>
           <ProgressBar percentage="70%" label="UX/UI" />
           <ProgressBar percentage="60%" label="Python" />
           <ProgressBar percentage="40%" label="Unit3D" />

@@ -27,7 +27,7 @@ const NavList = ({ onParallaxPosition }: Props) => {
       widthSize: open ? '150px' : '40px',
       borderRadius: open ? '4px' : '50px',
       background: open ? 'rgba(24, 24, 24, 0.605)' : '#1576f3',
-      top: open ? '500px' : '720px',
+      top: open ? '50%' : '80%',
     },
   });
   const transRef = useRef();
