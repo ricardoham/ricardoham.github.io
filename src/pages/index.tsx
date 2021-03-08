@@ -34,7 +34,10 @@ export default function Home() {
       <Parallax
         ref={parallaxRef}
         pages={9}
-        style={{ backgroundImage: `url(${prefix}/assets/picture04.jpg)` }}
+        style={{
+          backgroundImage: `url(${prefix}/assets/picture04.jpg)`,
+          backgroundSize: 'cover',
+        }}
       >
         <ParallaxLayer offset={0} speed={0} />
         <ParallaxLayer offset={0} speed={1}>
