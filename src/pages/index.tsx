@@ -10,6 +10,7 @@ import Skills from '../components/pages-content/skills/Skills';
 import Projects from '../components/pages-content/projects/Projects';
 import Footer from '../components/footer/Footer';
 import styles from '../styles/Parallax.module.css';
+import { prefix } from '../utils/prefix';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
@@ -30,7 +31,11 @@ export default function Home() {
       </Head>
 
       <NavList onParallaxPosition={parallaxPosition} />
-      <Parallax ref={parallaxRef} pages={9} className={styles.bgimg}>
+      <Parallax
+        ref={parallaxRef}
+        pages={9}
+        style={{ backgroundImage: `url(${prefix}/assets/picture04.jpg)` }}
+      >
         <ParallaxLayer offset={0} speed={0} />
         <ParallaxLayer offset={0} speed={1}>
           <Banner />

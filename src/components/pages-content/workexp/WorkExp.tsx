@@ -1,9 +1,10 @@
 import React from 'react';
+import { prefix } from '../../../utils/prefix';
 import Section from '../../section/section/Section';
 
 const WorkExp = () => {
   return (
-    <Section img="/assets/gifs/code.webp">
+    <Section img={`${prefix}/assets/gifs/code.webp`}>
       <h2>Work Experience</h2>
       <p>
         My first work experience was in <b>Instituto de Pesquisas Eldorado</b>{' '}

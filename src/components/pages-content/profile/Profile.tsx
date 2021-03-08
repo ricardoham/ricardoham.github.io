@@ -1,10 +1,11 @@
 import React from 'react';
+import { prefix } from '../../../utils/prefix';
 import Section from '../../section/section/Section';
 
 const Profile = () => {
   return (
     <div>
-      <Section img="/assets/gifs/cat.webp">
+      <Section img={`${prefix}/assets/gifs/cat.webp`}>
         <h2>About me</h2>
         <p>
           My name is Ricardo Tadeu Manoel Junior, I'm from Brazil I live on

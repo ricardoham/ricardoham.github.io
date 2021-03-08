@@ -1,4 +1,5 @@
 import React from 'react';
+import { prefix } from '../../../utils/prefix';
 import ProgressBar from '../../progress-bar/ProgressBar';
 import { Container, SkillsImg, SkillsTextFE } from './styles';
 
@@ -16,7 +17,7 @@ const Skills = () => {
           <ProgressBar percentage="50%" label="Flutter" />
           <ProgressBar percentage="80%" label="TypeScript" />
         </Container.Bars>
-        <SkillsImg src="/assets/gifs/react.webp" />
+        <SkillsImg src={`${prefix}/assets/gifs/react.webp`} />
       </Container.Skills>
       <Container.Skills style={{ display: 'flex' }}>
         <Container.Bars>
@@ -26,7 +27,7 @@ const Skills = () => {
           <ProgressBar percentage="40%" label="Java" />
           <ProgressBar percentage="50%" label="MongoDB" />
         </Container.Bars>
-        <SkillsImg src="/assets/gifs/node.webp" />
+        <SkillsImg src={`${prefix}/assets/gifs/node.webp`} />
       </Container.Skills>
       <Container.Skills style={{ display: 'flex' }}>
         <Container.Bars>
@@ -35,7 +36,7 @@ const Skills = () => {
           <ProgressBar percentage="60%" label="Python" />
           <ProgressBar percentage="40%" label="Unit3D" />
         </Container.Bars>
-        <SkillsImg src="/assets/gifs/rocket.webp" />
+        <SkillsImg src={`${prefix}/assets/gifs/node.webp`} />
       </Container.Skills>
     </Container>
   );
