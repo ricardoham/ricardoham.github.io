@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Banner from '../components/banner/Banner';
 import NavList from '../components/navlist/NavList';
-import Profile from '../pages-content/profile/Profile';
+// import Profile from '../pages-content/profile/Profile';
 import Graduation from '../pages-content/graduation/Graduation';
 import WorkExp from '../pages-content/workexp/WorkExp';
 import Skills from '../pages-content/skills/Skills';
@@ -36,7 +36,7 @@ export default function Home() {
           <Banner />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.3}>
-          <Profile />
+          {/* <Profile /> */}
         </ParallaxLayer>
         <ParallaxLayer offset={2.18} speed={0.3}>
           <Graduation />
