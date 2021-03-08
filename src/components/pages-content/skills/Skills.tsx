@@ -36,7 +36,7 @@ const Skills = () => {
           <ProgressBar percentage="60%" label="Python" />
           <ProgressBar percentage="40%" label="Unit3D" />
         </Container.Bars>
-        <SkillsImg src={`${prefix}/assets/gifs/node.webp`} />
+        <SkillsImg src={`${prefix}/assets/gifs/rocket.webp`} />
       </Container.Skills>
     </Container>
   );
