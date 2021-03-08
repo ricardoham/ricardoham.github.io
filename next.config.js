@@ -6,10 +6,16 @@
 
 module.exports = {
   webpack: (config) => {
-    config.module.rules.push({
-      test: /react-spring/,
-      sideEffects: true,
-    });
+    config.module.rules.push(
+      {
+        test: /react-spring/,
+        sideEffects: true,
+      },
+      {
+        test: /\@react-spring\/parallax/,
+        sideEffects: true,
+      },
+    );
 
     return config;
   },
