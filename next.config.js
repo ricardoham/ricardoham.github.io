@@ -10,6 +10,7 @@ module.exports = {
       test: /react-spring/,
       sideEffects: true,
     });
+
     return config;
   },
 };
