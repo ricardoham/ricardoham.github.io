@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../../components/section/section/Section';
+import Section from '../../section/section/Section';
 
 const Profile = () => {
   return (

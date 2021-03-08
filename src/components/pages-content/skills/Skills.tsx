@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBar from '../../components/progress-bar/ProgressBar';
+import ProgressBar from '../../progress-bar/ProgressBar';
 import { Container, SkillsImg, SkillsTextFE } from './styles';
 
 const Skills = () => {
