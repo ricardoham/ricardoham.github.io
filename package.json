@@ -9,6 +9,9 @@
     "start": "next start",
     "lint": "eslint --ext .ts,.tsx"
   },
+  "resolutions": {
+    "webpack": "~4.43.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run lint"
