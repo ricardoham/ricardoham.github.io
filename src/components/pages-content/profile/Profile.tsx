@@ -1,6 +1,6 @@
 import React from 'react';
-import { prefix } from '../../../utils/prefix';
-import Section from '../../section/section/Section';
+import { prefix } from 'utils/prefix';
+import Section from 'components/section/section/Section';
 
 const Profile = () => {
   return (

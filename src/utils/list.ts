@@ -2,7 +2,7 @@ export const list = [
   {
     name: 'Return to Top',
     height: 20,
-    offset: 0,
+    offset: 0.01,
   },
   {
     name: 'About Me',

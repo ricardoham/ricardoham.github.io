@@ -1,6 +1,6 @@
 import React from 'react';
-import { prefix } from '../../../utils/prefix';
-import ProgressBar from '../../progress-bar/ProgressBar';
+import { prefix } from 'utils/prefix';
+import ProgressBar from 'components/progress-bar/ProgressBar';
 import { Container, SkillsImg, SkillsTextFE } from './styles';
 
 const Skills = () => {

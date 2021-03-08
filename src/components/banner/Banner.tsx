@@ -1,7 +1,7 @@
 import React from 'react';
-import SocialIcons from '../social-icons/SocialIcons';
+import SocialIcons from 'components/social-icons/SocialIcons';
+import { prefix } from 'utils/prefix';
 import { StyledHeader, HeaderPhoto, HeaderContainer } from './styles';
-import { prefix } from '../../utils/prefix';
 
 const Banner = () => {
   return (
