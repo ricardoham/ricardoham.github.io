@@ -2,10 +2,17 @@
 
 // module.exports = withTM();
 
-config.module.rules.push({
-  test: /react-spring/,
-  sideEffects: true,
-});
+// const withImages = require('next-images');
+
+module.exports = {
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /react-spring/,
+      sideEffects: true,
+    });
+    return config;
+  },
+};
 
 module.exports = {
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,

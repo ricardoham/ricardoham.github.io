@@ -37,6 +37,7 @@ export default function Home() {
         style={{
           backgroundImage: `url(${prefix}/assets/picture04.jpg)`,
           backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <ParallaxLayer offset={0} speed={0} />
