@@ -13,26 +13,10 @@ import { prefix } from 'utils/prefix';
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
 
-  const parallaxPosition = (pos: number) => {
-    parallaxRef.current.scrollTo(pos);
-  };
-
   return (
     <>
       <Head>
         <title>Portfolio Ricardo</title>
-        <meta charSet="utf-8" />
-        <meta property="og:title" content="Portfolio Ricardo Manoel"></meta>
-        <meta
-          property="og:description"
-          name="description"
-          content="Personal portfolio of Fullstack Developer with background in React, Nodejs and Golang"
-        />
-        <meta
-          property="og:image"
-          content={`${prefix}/assets/profile-header.jpg`}
-        />
-        <meta property="og:url" content="https://ricardoham.github.io/"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
