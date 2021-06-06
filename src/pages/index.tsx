@@ -8,15 +8,26 @@ import WorkExp from 'components/pages-content/workexp/WorkExp';
 import Skills from 'components/pages-content/skills/Skills';
 import Projects from 'components/pages-content/projects/Projects';
 import Footer from 'components/footer/Footer';
-import { prefix } from 'utils/prefix';
 
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
 
   return (
-    <div>
+    <>
       <Head>
         <title>Portfolio Ricardo</title>
+        <meta charSet="utf-8" />
+        <meta property="og:title" content="Portfolio Ricardo Manoel" />
+        <meta
+          property="og:description"
+          name="description"
+          content="Personal portfolio of Fullstack Developer with background in React, Nodejs and Golang"
+        />
+        <meta
+          property="og:image"
+          content='/assets/profile-header.jpg'
+        />
+        <meta property="og:url" content="https://ricardoham.github.io/" />
         <link rel="icon" href='/favicon.ico' />
         <link
           href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
@@ -57,6 +68,6 @@ export default function Home() {
           </ParallaxLayer>
         </Parallax>
       </div>
-    </div>
+    </>
   );
 }
