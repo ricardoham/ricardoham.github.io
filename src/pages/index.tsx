@@ -11,50 +11,29 @@ import Footer from 'components/footer/Footer';
 import { prefix } from 'utils/prefix';
 
 export default function Home() {
-  const parallaxRef = useRef<IParallax>();
+  // const parallaxRef = useRef<IParallax>();
 
   console.log(prefix)
 
   return (
-    <>
+    <div>
       <Head>
         <title>Portfolio Ricardo</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div>
-        <Parallax
-          ref={parallaxRef}
-          pages={9}
-          style={{
-            backgroundImage: `url(${prefix}/assets/picture04.jpg)`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <ParallaxLayer offset={0} speed={0} />
-          <ParallaxLayer offset={0} speed={1}>
             <Banner />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.3}>
             <Profile />
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.18} speed={0.3}>
             <Graduation />
-          </ParallaxLayer>
-          <ParallaxLayer offset={3} speed={0.3}>
             <WorkExp />
-          </ParallaxLayer>
-          <ParallaxLayer offset={4.3} speed={0.3}>
             <Skills />
-          </ParallaxLayer>
-          <ParallaxLayer offset={6.4} speed={0.3}>
             <Projects />
-          </ParallaxLayer>
-          <ParallaxLayer offset={8.5} speed={0.5}>
             <Footer />
-          </ParallaxLayer>
-        </Parallax>
       </div>
-    </>
+    </div>
   );
 }
