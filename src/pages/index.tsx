@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Head from 'next/head';
-import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Banner from 'components/banner/Banner';
 import Profile from 'components/pages-content/profile/Profile';
 import Graduation from 'components/pages-content/graduation/Graduation';
