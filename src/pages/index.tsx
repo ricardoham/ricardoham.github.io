@@ -13,6 +13,8 @@ import { prefix } from 'utils/prefix';
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
 
+  console.log(prefix)
+
   return (
     <>
       <Head>
