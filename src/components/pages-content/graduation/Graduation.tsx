@@ -1,10 +1,9 @@
 import React from 'react';
-import { prefix } from 'utils/prefix';
 import Section from 'components/section/section/Section';
 
 const Graduation = () => {
   return (
-    <Section img={`${prefix}/assets/gifs/astronaut.webp`}>
+    <Section img='/assets/gifs/astronaut.webp'>
       <h2>Graduation</h2>
       <p>
         I graduated from the University of Campinas - Unicamp in 2016 with a

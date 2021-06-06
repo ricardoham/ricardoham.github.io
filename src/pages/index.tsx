@@ -13,13 +13,11 @@ import { prefix } from 'utils/prefix';
 export default function Home() {
   const parallaxRef = useRef<IParallax>();
 
-  console.log(prefix)
-
   return (
     <div>
       <Head>
         <title>Portfolio Ricardo</title>
-        <link rel="icon" href={`${prefix}/favicon.ico`} />
+        <link rel="icon" href='/favicon.ico' />
         <link
           href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
           rel="stylesheet"
@@ -30,7 +28,7 @@ export default function Home() {
           ref={parallaxRef}
           pages={9}
           style={{
-            backgroundImage: `url(/assets/picture04.jpg)`,
+            backgroundImage: 'url(/assets/picture04.jpg)',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
