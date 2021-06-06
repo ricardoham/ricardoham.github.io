@@ -19,10 +19,6 @@ export default function Home() {
       <Head>
         <title>Portfolio Ricardo</title>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div>
             <Banner />
