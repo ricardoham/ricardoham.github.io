@@ -10,6 +10,7 @@ import Footer from 'components/footer/Footer';
 import { prefix } from 'utils/prefix';
 
 export default function Home() {
+  console.log(prefix)
   return (
     <>
       <Head>
