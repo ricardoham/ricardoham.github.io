@@ -25,6 +25,7 @@ const Image = ({
   <Wrapper>
     <StyleImg
       src={src}
+      alt="img_blog"
       width={width}
       height={height}
       objectFit={objectFit}
